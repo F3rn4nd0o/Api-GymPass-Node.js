@@ -1,5 +1,8 @@
+import fastifyCors from '@fastify/cors'
 import { app } from './app'
 import { env } from './env'
+
+app.register(fastifyCors)
 
 app
   .listen({
